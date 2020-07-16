@@ -77,7 +77,7 @@ The disaster response pipeline is broken into 3 main subproblems:
 
 - `models/`
 
-  - `train_classifier.py` : The NLP and Machine learning pipeline script which trains and improves the model
+  - `train_classifier.py` : The NLP and Machine learning pipeline script which trains and improves the model. It saves the classifier.pkl which is generated after running the code as mentioned in instructions.
 
 - `gif/` - `nlpdisaster.gif` - A small demo gif of the appliction.
 
