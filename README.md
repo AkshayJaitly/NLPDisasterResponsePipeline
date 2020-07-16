@@ -3,9 +3,11 @@
 ### Table of Contents
 
 1.  [Instructions](#instructions)
-2.  [Demo Gif](#gif)
-3.  [Project Motivation](#motivation)
-4.  [File Descriptions](#files)
+2.  [Installations](#installations)
+3.  [Demo Gif](#gif)
+4.  [Project Motivation](#motivation)
+5.  [File Descriptions](#files)
+6.  [Acknowledgements](#acknowledged)
 
 ### Instructions:
 
@@ -34,13 +36,28 @@ The model output
 
 ![classification2](images/classification2.png)
 
-### Demo Gif<a name="gif"></a>
+## Installations<a name="installations"></a>
+
+> 1.  Python 3.5+
+> 2.  ML Libraries: NumPy, Pandas, SkLearn
+> 3.  NLP Libraries: NLTK
+> 4.  SQLlite Libraries: SQLalchemy
+> 5.  Model Loading and Saving Library: joblib
+> 6.  Web App and Visualization: Flask, Plotly
+
+## Demo Gif<a name="gif"></a>
 
 ![Nlp Demo](gif/nlpdisaster.gif)
 
 ## Project Motivation<a name="motivation"></a>
 
-This project is to use data from Figure Eight to build a model automatically classifies disaster messages. The web app included in this project is for emergency workers who can input a new message from social media and get classification results in several categories. Thanks to Udacity for helping develop such an amazing Ml Pipeline which classifies based on using advanced NLTK Toolkit.
+This Project is part of Data Science Nanodegree Program by Udacity in collaboration with Figure Eight. The dataset contains pre-labelled tweet and messages from real-life disaster events. The project aim is to build a Natural Language Processing and Machine learning model to categorize messages on a real time basis.
+
+The disaster response pipeline is broken into 3 main subproblems:
+
+1.  Building an ETL pipeline to extract data, clean the data and save the data in a SQLite Database
+2.  Building a NLP & ML pipeline to train our model
+3.  Run a Web App to show our model results using Flask and Plotly.
 
 ## File Descriptions <a name="files"></a>
 
@@ -56,10 +73,14 @@ This project is to use data from Figure Eight to build a model automatically cla
   - `disaster_categories.csv` : Disaster categories dataset
   - `disaster_messages.csv` : Disaster Messages dataset
   - `process_data.py` : The ETL data processing pipeline script
-  - `DisasterResponse.db` : The database with the merged and cleand data
+  - `DisasterResponse.db` : The database with the merged and cleaned data
 
 - `models/`
 
   - `train_classifier.py` : The NLP and Machine learning pipeline script which trains and improves the model
 
 - `gif/` - `nlpdisaster.gif` - A small demo gif of the appliction.
+
+## Acknowledgements<a name="acknowledged"></a>
+
+Thanks to Figure Eight and AirBnb for the dataset and Udacity for the course.
